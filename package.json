@@ -1,0 +1,24 @@
+{
+  "name": "respondeaqui",
+  "version": "1.0.0",
+  "description": "O projeto RespondeAqui é uma plataforma online de perguntas e respostas.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edmilsonhdr/RespondeAqui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edmilsonhdr/RespondeAqui/issues"
+  },
+  "homepage": "https://github.com/Edmilsonhdr/RespondeAqui#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
