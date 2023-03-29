@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+<body>
+<%- include('partials/navbar.ejs') %>
+<div class="container">
+    <br>
+    <div class="card">
+        <div class="card-header nav">
+            <h1><%= pergunta.titulo %></h1>
+        </div>
+        <div class="card-body">
+            <p><%= pergunta.descricao %></p>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <form action="POST" action="/responder">
+        <div class="card">
+            <div class="card-header nav">
+                <h1>Responda</h1>
+            </div>
+            <div class="card-body">
+                <label>Escreva sua resposta para a pergunta:</label>
+                <textarea placeholder="Digite sua pergunta" class="form-control" name="corpo"  cols="15" rows="3"></textarea>
+                <input type="hidden" name="pergunta" value="<%= pergunta.id %>">
+                <br>
+                <button type="submit" class="btn btn-success">Responder</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<%- include('partials/footer.ejs') %>
